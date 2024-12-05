@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: #402a23;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: scale-logo 2s infinite alternate ease-in-out;
+  }
+  @keyframes scale-logo {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .nav-menu li a:hover {
+    color: #ff6347;
+  }
+  .search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+  .search-bar input:focus {
+    box-shadow: 0 0 10px #ff6347;
+  }
+  .featured-books {
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  .books-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .book-card {
+    flex: 1;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes categoria {
+    from { 
+        opacity: 0.5;
+    }
+    to {opacity: 1.0;}
+  }
+  footer {
+    padding: 1rem;
+    background: #402a23;
+    color: #fff;
+    text-align: center;
+  }
+  .footer-links a,
+  .social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover,
+  .social-media a:hover {
+    color: #ff6347;
+  }
+  button:active {
+    transform: scale(0.95);
+  }
+.categories {
+    padding: 2rem;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    animation: categoria 5s forwards;
+  }
+  .category-card {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: 200px;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    animation: categoria 5s forwards;
+  }
+  .category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .category-card p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .category-card img {
+    transition: transform 0.3s ease;
+  }
+  .category-card:hover img {
+    transform: scale(1.1);
+  }
+  
